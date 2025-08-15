@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+header{
+    height: 100px;
+    background-color: rgb(26, 10, 193);
+    position: sticky;
+    /*min-width:1200*/
+    margin: 0 auto;
+    
+    
+}
+
+header .navbar{
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+header .navbar {
+    padding: 10px;
+    
+}
+
+header .navbar form input{
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+header .navbar form button{
+    background-color: rgb(235, 9, 186);
+    padding: 5px;
+    margin-left: 3px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+header .navbar button:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-block: 40px;
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    min-height: 70vh;
+
+}
+
+footer{
+   text-align: center;
+   padding-block: 20px;
+    background-color: blue;
+}
+
+.movie-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background: #fff;
+    box-shadow: 0px 0px 10px #ccc;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.movie-poster img{
+    min-height: 500px;
+}
+
+.movie-info{
+    padding-inline: 15px;
+}
+
+.movie-info h2{
+    text-align: center;
+    font-size: 32px;
+
+}
+
+.movie-info h2+p{
+    text-align: center;
+}
+
+.movie-info .movie-genre p{
+    background-color: #232f3e;
+    color: #fff;
+    padding: 5px 14px;
+    margin-inline: 5px;
+    border: 2px solid #000000;
+    font-weight: 700;
+    overflow-x: auto;
+}
+
+.movie-info .movie-genre{
+    display: flex;
+    justify-content: center ;  
+    margin-block: 5px;
+}
+
+.movie-info  p{
+    margin-block: 15px;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+
+
+
+@media screen and (max-width:950px){
+    .movie-container{
+        flex-direction: column;
+    }
+
+    .movie-poster img{
+        width: 100%;
+        height: fit-content;
+        margin-left: 0;
+    }
+    .movie-info{
+        padding-inline: 30px;
+    }
+    
+}
+
+@media screen and (max-width:630px){
+    .navbar{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+    }
+}
